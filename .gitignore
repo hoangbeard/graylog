@@ -1,0 +1,19 @@
+# Ignore everything in the graylog_data directory
+# graylog_data/
+# mongo_data/
+# os_data/
+
+# If you need to keep the directory itself, but ignore all its contents, you can use:
+graylog_data/**
+mongo_data/**
+os_data/**
+
+# But keep the README.md file
+!graylog_data/README.md
+!mongo_data/README.md
+!os_data/README.md
+
+# But do not ignore the graylog.conf and log4j2.xml files in the config directory
+!graylog_data/config/
+!graylog_data/config/graylog.conf
+!graylog_data/config/log4j2.xml
